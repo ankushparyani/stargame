@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Choose Character</h1>
+
+    <ol>
+
+      <a href="./battle.html?characterId=1">
+        <li>Character 1</li>
+      </a>
+
+      <a href="./battle.html?characterId=2">
+        <li>Character 2</li>
+      </a>
+
+      <a href="./battle.html?characterId=3">
+        <li>Character 3</li>
+      </a>
+
+      <a href="./battle.html?characterId=4">
+        <li>Character 4</li>
+      </a>
+
+      <a href="./battle.html?characterId=5">
+        <li>Character 5</li>
+      </a>
+
+
+    </ol>
+  </body>
+  <script type="text/javascript">
+  function getURLVariables() {
+      var vars = {};
+      console.log("Href is" + window.location.href);
+      var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+        // console.log("M is: " + m);
+        // console.log("Key is: " + key);
+        // console.log("Value is: " + value);
+        vars[key] = value;
+      });
+    return vars;
+  }
+
+  var params = getURLVariables();
+  console.log(params);
+
+
+  </script>
+</html>

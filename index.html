@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Star ke Wars</title>
+  </head>
+  <body>
+    <h1>Star ke Wars</h1>
+    <img src="./images/star2logo.jpg" alt="" height="500px">
+    <input id="input_user_name" type="text" name="" value="Ankush" placeholder="Enter your name">
+    <button type="button" name="button" onclick="openNextPage()">Start Game</button>
+  </body>
+
+  <script type="text/javascript">
+
+    function openNextPage() {
+      var userName = document.getElementById('input_user_name')
+      window.location.assign("./chooseCharacter.html?user_name=" + userName.value);
+    }
+
+  </script>
+</html>
